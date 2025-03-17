@@ -9,9 +9,9 @@ export default NextAuth({
       authorizationUrl: 'https://login.salesforce.com/services/oauth2/authorize?response_type=code',  
       scope: 'openid profile email',  
       params: { grant_type: 'authorization_code' },  
-      accessTokenUrl: 'https://login.salesforce.com/services/oauth2/token',  
-      requestTokenUrl: 'https://login.salesforce.com/services/oauth2/token',  
-      profileUrl: 'https://login.salesforce.com/services/oauth2/userinfo',  
+      // accessTokenUrl: 'https://login.salesforce.com/services/oauth2/token',  
+      // requestTokenUrl: 'https://login.salesforce.com/services/oauth2/token',  
+      // profileUrl: 'https://login.salesforce.com/services/oauth2/userinfo',  
       profile(profile) {  
         return {  
           id: profile.sub,  
